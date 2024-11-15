@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./grievance.css">
+    <title>Submit a Grievance</title>
+</head>
+<body>
+
+<div class="container">
+    <h1>Submit a Grievance</h1>
+    <form action="grievance.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="department">Department:</label>
+        <select id="department" name="department" required>
+            <option value="commercial">Commercial</option>
+            <option value="service">Service</option>
+            <option value="support">Support</option>
+            <option value="direction">Direction</option>
+        </select>
+
+        <label for="grievance">Grievance:</label>
+        <textarea id="grievance" name="grievance" rows="5" required></textarea>
+
+        <button type="submit" name="submit">Submit</button>
+        <button type="reset" class="cancel-btn">Cancel</button>
+    </form>
+</div>
+
+</body>
+</html>
